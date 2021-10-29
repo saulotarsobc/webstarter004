@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch assets/sass/main.scss:assets/css/main.css"
+    "sass": "sass --watch assets/sass/main.scss:assets/css/main.css",
+    "git": "git add --all && git commit -m\"Aula\" && git push origin final && yarn sass"
   },
   "keywords": [],
   "author": "",

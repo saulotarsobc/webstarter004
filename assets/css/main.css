@@ -1165,5 +1165,62 @@ header.page-title hr {
     justify-content: space-around;
   }
 }
+#contact {
+  flex-direction: column;
+}
+#contact p {
+  font-size: 15px;
+  color: var(--gray-1);
+  font-weight: 600;
+}
+#contact h2 {
+  padding: 0 15px;
+  margin: 0;
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--dark-0);
+  text-transform: uppercase;
+}
+#contact > section {
+  flex-direction: column;
+}
+#contact #map {
+  width: 100%;
+  height: 263px;
+  background: url("../images/mapa.png") no-repeat;
+  margin-top: var(--space);
+}
+#contact .contacts {
+  margin: 0;
+  margin-top: 30px;
+  padding: 1em;
+  flex-direction: column;
+}
+#contact .contacts li {
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4em;
+  text-align: center;
+  border: solid 1px var(--gray-3);
+  width: 100%;
+  color: var(--gray-6);
+}
+#contact .contacts li img {
+  max-width: 100px;
+  margin: 0 auto;
+  margin-top: calc(var(--space) * -3);
+  background-color: var(--white);
+  padding: 0 15px;
+}
+#contact .contacts li .title {
+  font-weight: 600;
+  margin: 0;
+  font-size: 24px;
+}
+#contact .contacts li p {
+  font-weight: 300;
+  margin: 0;
+  font-size: 25px;
+}
 
 /*# sourceMappingURL=main.css.map */
