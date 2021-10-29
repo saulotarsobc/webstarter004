@@ -283,7 +283,7 @@ header.page-title hr {
 }
 .page .page-title {
   margin: var(--space);
-  width: calc(100% - var(--space) * 2);
+  width: calc(100% - calc(var(--space) * 2));
 }
 .page > header {
   width: 100%;
@@ -603,7 +603,7 @@ header.page-title hr {
     font-weight: bold;
   }
   .calendar .days {
-    grid-template-rows: repeat(5, 141.7142857143px);
+    grid-template-rows: repeat(5, calc(992px / 7));
   }
   .calendar .days li {
     font-size: 38px;
@@ -726,7 +726,7 @@ header.page-title hr {
 }
 #header .menu .btn-register {
   margin: 20px;
-  width: 260px;
+  width: calc(300px - 40px);
   min-width: 130px;
   border: none;
   height: 50px;
@@ -1082,7 +1082,7 @@ header.page-title hr {
 .service {
   flex-direction: column;
   padding: 20px;
-  padding-bottom: 50vw;
+  padding-bottom: calc(100vw * 0.5);
   background-image: url("../images/services.svg");
   background-position: bottom;
   background-size: contain;
