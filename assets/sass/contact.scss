@@ -55,3 +55,38 @@
         }
     }
 }
+
+@media (min-width: 992px){
+    #contact {
+        h2 {
+            font-size: calc(var(--space) * 3);
+        }
+        > section {
+            flex-direction: row;
+            form, #map {
+                flex: 1;
+            }
+            form {
+                max-width: unset;
+            }
+            #map {
+                margin-left: 0;
+                height: 570px;
+            }
+        }
+        .contacts { 
+            flex-direction: row;
+            li {
+                margin-right: 1em;
+                margin-bottom: 2em;
+                &:last-child {
+                    margin-right: unset;
+                }
+
+            }
+        }
+        textarea {
+            height: 245px;
+        }
+    }
+}

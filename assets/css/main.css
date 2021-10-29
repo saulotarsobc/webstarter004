@@ -1223,4 +1223,36 @@ header.page-title hr {
   font-size: 25px;
 }
 
+@media (min-width: 992px) {
+  #contact h2 {
+    font-size: calc(var(--space) * 3);
+  }
+  #contact > section {
+    flex-direction: row;
+  }
+  #contact > section form, #contact > section #map {
+    flex: 1;
+  }
+  #contact > section form {
+    max-width: unset;
+  }
+  #contact > section #map {
+    margin-left: 0;
+    height: 570px;
+  }
+  #contact .contacts {
+    flex-direction: row;
+  }
+  #contact .contacts li {
+    margin-right: 1em;
+    margin-bottom: 2em;
+  }
+  #contact .contacts li:last-child {
+    margin-right: unset;
+  }
+  #contact textarea {
+    height: 245px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
