@@ -283,7 +283,7 @@ header.page-title hr {
 }
 .page .page-title {
   margin: var(--space);
-  width: calc(100% - calc(var(--space) * 2));
+  width: calc(100% - var(--space) * 2);
 }
 .page > header {
   width: 100%;
@@ -603,7 +603,7 @@ header.page-title hr {
     font-weight: bold;
   }
   .calendar .days {
-    grid-template-rows: repeat(5, calc(992px / 7));
+    grid-template-rows: repeat(5, 141.7142857143px);
   }
   .calendar .days li {
     font-size: 38px;
@@ -726,7 +726,7 @@ header.page-title hr {
 }
 #header .menu .btn-register {
   margin: 20px;
-  width: calc(300px - 40px);
+  width: 260px;
   min-width: 130px;
   border: none;
   height: 50px;
@@ -1082,7 +1082,7 @@ header.page-title hr {
 .service {
   flex-direction: column;
   padding: 20px;
-  padding-bottom: calc(100vw * 0.5);
+  padding-bottom: 50vw;
   background-image: url("../images/services.svg");
   background-position: bottom;
   background-size: contain;
@@ -1253,6 +1253,124 @@ header.page-title hr {
   #contact textarea {
     height: 245px;
   }
+}
+#schedules-times main {
+  padding: var(--space);
+}
+#schedules-times h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+#schedules-times h2 small {
+  display: block;
+  font-size: 14px;
+  color: var(--gray-9);
+}
+@media (min-width: 768px) {
+  #schedules-times h2 {
+    font-size: 22px;
+  }
+}
+#schedules-times .options {
+  margin-top: var(--space);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#schedules-times .options label {
+  width: calc(50% - var(--space) / 2);
+  margin-bottom: var(--space);
+}
+#schedules-times .options label input {
+  display: none;
+}
+#schedules-times .options label input:checked + span {
+  background-color: var(--blue);
+  color: var(--white);
+}
+#schedules-times .options label span {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  background-color: var(--gray-10);
+}
+#schedules-times .options label span:hover {
+  background-color: var(--black-10);
+}
+#schedules-times .options label span:active {
+  background-color: var(--black-75);
+}
+@media (min-width: 768px) {
+  #schedules-times .options label {
+    width: calc(25% - var(--space));
+    margin-right: var(--space);
+  }
+}
+@media (min-width: 768px) {
+  #schedules-times .options {
+    max-width: 700px;
+    justify-content: flex-start;
+  }
+}
+
+#schedules-services main {
+  padding: var(--space);
+}
+#schedules-services main .options {
+  flex-direction: column;
+}
+#schedules-services main .options label {
+  margin-bottom: var(--space);
+  display: flex;
+}
+#schedules-services main .options label .square {
+  width: 22px;
+  height: 22px;
+  border: var(--gray-8) 2px solid;
+  padding: 3px;
+}
+#schedules-services main .options label .square > div {
+  flex: 1;
+  background-color: var(--blue);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#schedules-services main .options label:hover {
+  cursor: pointer;
+}
+#schedules-services main .options label:hover .square > div {
+  opacity: 0.2;
+}
+#schedules-services main .options label input {
+  display: none;
+}
+#schedules-services main .options label input:checked + .square > div {
+  opacity: 1;
+}
+#schedules-services main .options label .content {
+  margin-left: var(--space);
+  flex-direction: column;
+  font-size: 16px;
+  color: var(--dark-0);
+}
+#schedules-services main .options label .content .description {
+  font-size: 14px;
+  color: var(--gray-2);
+}
+#schedules-services main .options label .content .price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

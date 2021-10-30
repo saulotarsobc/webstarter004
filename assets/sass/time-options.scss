@@ -1,0 +1,46 @@
+#schedules-times {
+    main {
+        padding: var(--space);
+    }
+    h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        small {
+            display: block;
+            font-size: 14px;
+            color: var(--gray-9);
+        }
+        @media(min-width: 768px) {
+            font-size: 22px;
+        }
+    }
+    .options {
+        margin-top: var(--space);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        label {
+            width: calc(50% - calc(var(--space) / 2));
+            margin-bottom: var(--space);
+            input {
+                display: none;
+                &:checked + span {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
+            span {
+                @include button;
+                background-color: var(--gray-10);
+            }
+            @media(min-width: 768px) {
+                width: calc(25% - var(--space));
+                margin-right: var(--space);
+            }
+        }
+        @media(min-width: 768px) {
+            max-width: 700px;
+            justify-content: flex-start;
+        }
+    }
+}
